@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<body style="background:#e8f3e4; display:flex; justify-content:center; align-items:center; height:100vh;">
+
+<div class="tree">
+  <div class="trunk"></div>
+
+  <div class="leaf big"></div>
+  <div class="leaf big two"></div>
+  <div class="leaf big three"></div>
+  <div class="leaf small"></div>
+  <div class="leaf small two"></div>
+
+  <div class="fruit"></div>
+  <div class="fruit small"></div>
+  <div class="fruit tiny"></div>
+</div>
+
+<style>
+.tree {
+  position: relative;
+  width: 260px;
+  height: 300px;
+}
+
+/* Trunk */
+.trunk {
+  width: 55px;
+  height: 150px;
+  background: linear-gradient(#8b5a2b, #5c3a1a);
+  border-radius: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  box-shadow: inset -8px -12px 0 rgba(0,0,0,0.25);
+}
+
+/* Leaves */
+.leaf {
+  position: absolute;
+  background: radial-gradient(circle at 30% 30%, #4caf50, #2e7d32);
+  border-radius: 60px;
+  opacity: 0.95;
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.2));
+}
+
+.leaf.big {
+  width: 160px;
+  height: 90px;
+  top: 10px;
+  left: 40px;
+}
+
+.leaf.big.two {
+  width: 150px;
+  height: 85px;
+  top: 50px;
+  left: 20px;
+  transform: rotate(-15deg);
+}
+
+.leaf.big.three {
+  width: 150px;
+  height: 85px;
+  top: 50px;
+  left: 90px;
+  transform: rotate(15deg);
+}
+
+.leaf.small {
+  width: 120px;
+  height: 60px;
+  top: 100px;
+  left: 50px;
+}
+
+.leaf.small.two {
+  width: 120px;
+  height: 60px;
+  top: 100px;
+  left: 100px;
+}
+
+/* Fruit */
+.fruit {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle at 30% 30%, #ffa726, #fb8c00);
+  border-radius: 50%;
+  position: absolute;
+  top: 120px;
+  left: 140px;
+  box-shadow: inset -6px -6px 0 rgba(0,0,0,0.2);
+}
+
+.fruit.small {
+  width: 28px;
+  height: 28px;
+  top: 150px;
+  left: 90px;
+}
+
+.fruit.tiny {
+  width: 20px;
+  height: 20px;
+  top: 170px;
+  left: 150px;
+}
+</style>
+
+</body>
+</html>
